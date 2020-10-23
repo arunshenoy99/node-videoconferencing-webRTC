@@ -2,11 +2,22 @@
     margin-top: 100px;
 }
 
-#videos-container {
-    margin-top: 200px;
-}
-
 .page-heading {
     margin: 100px 0px;
     border-bottom: 1px solid grey;
+}
+
+.video-row {
+    margin: 0px auto;
+    padding: auto 0px;
+}
+
+#remote-video-col {
+    height: 500;
+    width: 500;
+}
+
+#local-video-col {
+    height: 500;
+    width: 500;
 }
