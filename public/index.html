@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
         <title>Video Chat</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="remote-peer-form-container">
+            <div class="row page-heading">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1>Video Calling</h1>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
+                    <form id="remote-form">
+                       <div class="form-group row">
+                           <label for="remote-peer" class="col-md-2 col-form-label">Enter Remote Peer</label>
+                           <div class="col-md-6">
+                                <input name="remote-peer" class="form-control" type="text" placeholder="Enter remote peer id">
+                           </div>
+                       </div>
+                       <div class="form-group row">
+                           <div class="offset-2 col-10">
+                               <button type="submit" class="btn btn-primary" id="remote-form-button">Call</button>
+                           </div>
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="videos-container">
+            <div class="row">
+                <div class="col-12 col-sm-6" id="local-video-col">
                     <video autoplay class="local-video" id="local-video"></video>
+                </div>
+                <div class="col-12 col-sm-6" id="remote-video-col">
+                    <video autoplay class="remote-video" id="remote-video"></video>
                 </div>
             </div>
         </div>
@@ -16,8 +48,6 @@
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/popper.min.js"></script>
         <script src="/js/chat.js"></script>
     </body>
 </html>

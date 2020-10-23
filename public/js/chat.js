@@ -1,4 +1,4 @@
-const coket = io()
+const socket = io()
 
 const $localVideo = document.querySelector('#local-video')
 
